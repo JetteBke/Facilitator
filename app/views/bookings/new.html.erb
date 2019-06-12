@@ -1,2 +1,10 @@
-<h1>Bookings#new</h1>
-<p>Find me in app/views/bookings/new.html.erb</p>
+<div class="container w-50">
+  <h2 class="pt-4 text-center">Get in touch</h2>
+  <%= simple_form_for bookings_new_path do |f| %>
+    <%= f.input :name %>
+    <%= f.input :email %>
+    <%= f.input :options %>
+    <%= f.input :message %>
+    <%= f.button :submit %>
+  <% end %>
+</div>
