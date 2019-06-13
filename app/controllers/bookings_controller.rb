@@ -6,9 +6,15 @@ class BookingsController < ApplicationController
   def create
     @booking = Booking.create(booking_params)
     if @booking.save
-      redirect_to
+      render :new
     else
       render :new
     end
+  end
+
+  private
+
+  def booking_params
+    params.require(:booking).permit(:name, :email, :options, :message)
   end
 end

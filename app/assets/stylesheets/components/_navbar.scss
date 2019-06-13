@@ -15,3 +15,22 @@
     justify-content: center;
     font-size: x-large;
 }
+
+.link-navbar {
+  position: absolute;
+  right: 19px;
+  top: 28px;
+  color: grey;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.link-navbar:hover {
+  color: black;
+  text-decoration: none;
+}
+
+
+.submit-button {
+  background-color: #919ee2;
+}
