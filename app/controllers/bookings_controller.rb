@@ -5,11 +5,11 @@ class BookingsController < ApplicationController
 
   def create
     @booking = Booking.create(booking_params)
-    if @booking.save
-      render :new
-    else
-      render :new
-    end
+    # if @booking.save
+    #   render :new
+    # else
+    #   render :new
+    # end
   end
 
   private

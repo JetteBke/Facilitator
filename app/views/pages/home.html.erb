@@ -5,8 +5,6 @@
   </div>
 </div>
 
-<a href="" data-toggle="modal" data-target="#createreview">Booking</a>
-
 <div class="home-container my-5 py-5 bg-light">
   <h3>Etwas über dich?</h3>
   <p>some placeholder text for the about amazng Anni</p>
@@ -61,8 +59,8 @@
     <h3>Reviews</h3>
       <div class="">
         <img class="review-avatar" src="" alt="">
-        <h4>Jette Bakemeier</h4>
-        <p class="text-muted">Product Owner</p>
+        <h4>Jette</h4>
+        <p class="text-muted">Best day of my life!</p>
       </div>
   </div>
 </section>
@@ -71,14 +69,16 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="my-forms">
-        <div class="container w-50 py-5">
+        <div class="container py-4 w-50">
           <h2 class="pt-4 text-center">Get in touch</h2>
-          <%= simple_form_for bookings_new_path do |f| %>
+          <%= simple_form_for(bookings_path) do |f| %>
             <%= f.input :name %>
             <%= f.input :email %>
-            <%= f.input :options %>
+            <%= f.input :options, as: :radio_buttons, collection: ["Book Anni for a workshop", "Book Anni for a coaching"] %>
             <%= f.input :message %>
-            <%= f.button :submit %>
+            <div class="text-center">
+              <%= f.submit "Submit", class: "btn submit-button mb-5" %>
+            </div>
           <% end %>
         </div>
       </div>
