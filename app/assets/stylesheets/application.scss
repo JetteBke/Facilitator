@@ -12,11 +12,12 @@
 @import "components/index";
 @import "pages/index";
 @import "components/banner";
+@import "components/footer";
 
 
 body {
   font-family: 'Arapey', serif;
-  h2 {
+  h2, h1, h3, h4 {
     font-family: Arapey;
   }
 }
