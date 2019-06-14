@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'about', to: 'pages#about', as: :about
   root to: 'pages#home'
   resources :bookings, only: [:new, :create]
   resources :reviews, only: [:index, :new, :create]
