@@ -1,0 +1,19 @@
+.footer {
+  background-color: white;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  a {
+    font-size: 25px;
+    color: grey;
+  }
+  a:hover {
+    color: black;
+  }
+  p {
+    color: grey;
+    position: absolute;
+    right: 15px;
+    margin: 0px;
+  }
+}

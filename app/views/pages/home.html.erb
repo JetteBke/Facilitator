@@ -5,6 +5,83 @@
   </div>
 </div>
 
-<div class="container bg-light text-center my-4 py-5">  <h2>How it works</h2>
+<a href="" data-toggle="modal" data-target="#createreview">Booking</a>
+
+<div class="home-container my-5 py-5 bg-light">
+  <h3>Etwas über dich?</h3>
+  <p>some placeholder text for the about amazng Anni</p>
 </div>
-<%= link_to 'Get booking', bookings_new_path %>
+
+<section class="page-section" id="how-to">
+  <div class="home-container bg-light text-center my-5 py-5">
+    <h3>How it works</h3>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="timeline">
+          <li>
+            <div class="timeline-image">
+              <span>1</span>
+            </div>
+            <div class="timeline-panel">
+              <h4>Step 1 placeholder</h4>
+              <p class="text-muted">Browse through current event listings and find one that you want to contribute to</p>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <span>2</span>
+            </div>
+            <div class="timeline-panel">
+              <h4>Step 2 placeholder</h4>
+              <p class="text-muted">Browse through current event listings and find one that you want to contribute to</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-image">
+              <span>3</span>
+            </div>
+            <div class="timeline-panel">
+              <h4>Step 3 placeholder</h4>
+              <p class="text-muted">Browse through current event listings and find one that you want to contribute to</p>
+            </div>
+          </li>
+            <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>GOOD!</h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="home-container bg-light">
+    <h3>Reviews</h3>
+      <div class="">
+        <img class="review-avatar" src="" alt="">
+        <h4>Jette Bakemeier</h4>
+        <p class="text-muted">Product Owner</p>
+      </div>
+  </div>
+</section>
+
+<div class="modal fade bd-example-modal-lg" id="createreview" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="my-forms">
+        <div class="container w-50 py-5">
+          <h2 class="pt-4 text-center">Get in touch</h2>
+          <%= simple_form_for bookings_new_path do |f| %>
+            <%= f.input :name %>
+            <%= f.input :email %>
+            <%= f.input :options %>
+            <%= f.input :message %>
+            <%= f.button :submit %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
