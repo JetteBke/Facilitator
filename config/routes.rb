@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
-  get 'reviews/index'
-  get 'reviews/new'
-  get 'reviews/create'
-  get 'bookings/new'
-  get 'bookings/create'
   root to: 'pages#home'
+  resources :bookings, only: [:new, :create]
+  resources :reviews, only: [:index, :new, :create]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
