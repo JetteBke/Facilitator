@@ -80,11 +80,14 @@
   align-items: center;
   font-size: 40px;
   text-decoration: bold;
+  span {
+    font-size: 60px;
+  }
 }
 
 .timeline > li .timeline-image h4 {
   margin-top: 30px;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: bold;
   line-height: 14px;
   margin-top: 12px;
@@ -223,6 +226,7 @@
 .home-container {
   width: 1500px;
   margin: auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
   text-align: center;
   h3 {
     padding: 15px 0px;
@@ -234,3 +238,15 @@
   height: 70px;
   border-radius: 50%;
 }
+
+#review-text {
+  color: grey;
+}
+
+.review {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  height: 150px;
+}
+

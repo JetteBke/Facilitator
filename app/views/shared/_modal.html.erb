@@ -1,0 +1,20 @@
+<div class="modal fade bd-example-modal-lg" id="createreview" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="my-forms">
+        <div class="container py-4 w-50">
+          <h2 class="pt-4 text-center">Get in touch</h2>
+          <%= simple_form_for @booking do |f| %>
+            <%= f.input :name %>
+            <%= f.input :email %>
+            <%= f.input :options, as: :radio_buttons, collection: ["Book Anni for a workshop", "Book Anni for a coaching"] %>
+            <%= f.input :message %>
+            <div class="text-center">
+              <%= f.submit "Submit", class: "btn submit-button mb-5" %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

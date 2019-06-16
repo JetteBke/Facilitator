@@ -17,7 +17,7 @@
       <div class="col-lg-12">
         <ul class="timeline">
           <li>
-            <div class="timeline-image">
+            <div class="timeline-image" style="  background-color: #324856;">
               <span>1</span>
             </div>
             <div class="timeline-panel">
@@ -26,7 +26,7 @@
             </div>
           </li>
           <li class="timeline-inverted">
-            <div class="timeline-image">
+            <div class="timeline-image" style=" background-color: #4A746A;">
               <span>2</span>
             </div>
             <div class="timeline-panel">
@@ -35,7 +35,7 @@
             </div>
           </li>
           <li>
-            <div class="timeline-image">
+            <div class="timeline-image" style=" background-color: #D18237;">
               <span>3</span>
             </div>
             <div class="timeline-panel">
@@ -44,7 +44,7 @@
             </div>
           </li>
             <li class="timeline-inverted">
-            <div class="timeline-image">
+            <div class="timeline-image" style=" background-color: #D66C44;">
               <h4>GOOD!</h4>
             </div>
           </li>
@@ -57,31 +57,23 @@
 <section>
   <div class="home-container bg-light">
     <h3>Reviews</h3>
-      <div class="">
-        <img class="review-avatar" src="" alt="">
-        <h4>Jette</h4>
-        <p class="text-muted">Best day of my life!</p>
+    <div class="row reviews">
+      <div class="review col-lg-5 m-auto py-3">
+        <img class="avatar-large" src="https://res.cloudinary.com/ddcwrwijt/image/upload/v1560542341/Screenshot_from_2019-06-14_20-56-31_rfst85.png" alt="">
+        <div class="">
+          <i id="review-text">“With Anni in the team, it feels like it’s okay that we are not there yet. She just wants to help in a way that fits YoinFriends best.”</i>
+          <p class="pt-3 text-right"><i id="review-text">-Christel van der de Put, YoinFriends</i></p>
+        </div>
       </div>
-  </div>
-</section>
-
-<div class="modal fade bd-example-modal-lg" id="createreview" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="my-forms">
-        <div class="container py-4 w-50">
-          <h2 class="pt-4 text-center">Get in touch</h2>
-          <%= simple_form_for(bookings_path) do |f| %>
-            <%= f.input :name %>
-            <%= f.input :email %>
-            <%= f.input :options, as: :radio_buttons, collection: ["Book Anni for a workshop", "Book Anni for a coaching"] %>
-            <%= f.input :message %>
-            <div class="text-center">
-              <%= f.submit "Submit", class: "btn submit-button mb-5" %>
-            </div>
-          <% end %>
+      <div class="review col-lg-5 m-auto py-3">
+        <div>
+          <img class="avatar-large" src="https://res.cloudinary.com/ddcwrwijt/image/upload/v1560542341/Screenshot_from_2019-06-14_20-56-50_yydbjj.png" alt="">
+          <i id="review-text">“Anni is a silent force. She initiates change and can get people to move. It feels like she has always done this and will always do this. Her way of working feels completely natural.”</i>
+          <p class="pt-3 text-right"><i id="review-text">-Maartje de Boer, YoinFriends</i></p>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
+
+<%= render 'shared/modal' %>
