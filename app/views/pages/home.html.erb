@@ -65,13 +65,25 @@
   </div>
 </section>
 
+<section>
+  <div class="home-container bg-light">
+  <h3>My bookings</h3>
+  <% if !@bookings.nil? %>
+    <% @bookings.each do |booking| %>
+      <h4>Placeholder date</h4>
+      <p> <%= booking.options %> </p>
+      <p> <%= booking.message %> </p>
+    <% end %>
+  <% end %>
+</section>
+
 <div class="modal fade bd-example-modal-lg" id="createreview" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="my-forms">
         <div class="container py-4 w-50">
           <h2 class="pt-4 text-center">Get in touch</h2>
-          <%= simple_form_for(bookings_path) do |f| %>
+          <%= simple_form_for(@booking) do |f| %>
             <%= f.input :name %>
             <%= f.input :email %>
             <%= f.input :options, as: :radio_buttons, collection: ["Book Anni for a workshop", "Book Anni for a coaching"] %>
