@@ -14,6 +14,8 @@
 .navbar {
     justify-content: center;
     font-size: x-large;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
 }
 
 .link-navbar {
@@ -34,5 +36,6 @@
 
 
 .submit-button {
-  background-color: #919ee2;
+  background-color: #D66C44;
+  color: white;
 }
