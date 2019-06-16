@@ -225,18 +225,13 @@
 
 .home-container {
   width: 1500px;
-  margin: auto;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   text-align: center;
   h3 {
     padding: 15px 0px;
   }
-}
-
-.review-avatar {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
 }
 
 #review-text {
@@ -246,7 +241,9 @@
 .review {
   display: flex;
   justify-content: space-around;
-  width: 600px;
-  height: 150px;
+  align-items: center;
+  margin: auto;
+  width: 800px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 

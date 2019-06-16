@@ -5,13 +5,13 @@
   </div>
 </div>
 
-<div class="home-container my-5 py-5 bg-light">
+<div class="home-container bg-light">
   <h3>Etwas über dich?</h3>
   <p>some placeholder text for the about amazng Anni</p>
 </div>
 
 <section class="page-section" id="how-to">
-  <div class="home-container bg-light text-center my-5 py-5">
+  <div class="home-container bg-light text-center">
     <h3>How it works</h3>
     <div class="row">
       <div class="col-lg-12">
@@ -54,26 +54,5 @@
   </div>
 </section>
 
-<section>
-  <div class="home-container bg-light">
-    <h3>Reviews</h3>
-    <div class="row reviews">
-      <div class="review col-lg-5 m-auto py-3">
-        <img class="avatar-large" src="https://res.cloudinary.com/ddcwrwijt/image/upload/v1560542341/Screenshot_from_2019-06-14_20-56-31_rfst85.png" alt="">
-        <div class="">
-          <i id="review-text">“With Anni in the team, it feels like it’s okay that we are not there yet. She just wants to help in a way that fits YoinFriends best.”</i>
-          <p class="pt-3 text-right"><i id="review-text">-Christel van der de Put, YoinFriends</i></p>
-        </div>
-      </div>
-      <div class="review col-lg-5 m-auto py-3">
-        <div>
-          <img class="avatar-large" src="https://res.cloudinary.com/ddcwrwijt/image/upload/v1560542341/Screenshot_from_2019-06-14_20-56-50_yydbjj.png" alt="">
-          <i id="review-text">“Anni is a silent force. She initiates change and can get people to move. It feels like she has always done this and will always do this. Her way of working feels completely natural.”</i>
-          <p class="pt-3 text-right"><i id="review-text">-Maartje de Boer, YoinFriends</i></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+<%= render 'shared/carousel' %>
 <%= render 'shared/modal' %>
