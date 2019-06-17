@@ -235,15 +235,17 @@
 }
 
 #review-text {
-  color: grey;
+  color: black;
 }
 
 .review {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 15px;
   margin: auto;
   width: 800px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #e5e5e8;
+  border-radius: 10px;
 }
 

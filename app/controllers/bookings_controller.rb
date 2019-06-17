@@ -8,15 +8,12 @@ class BookingsController < ApplicationController
     if @booking.save
       session[:booking_id] = @booking.id
       flash[:success] = "New booking created."
+      mail = BookingMailer.with(booking: @booking).confirmation
+      mail.deliver_now
       redirect_to root_path
     else
       render 'new'
     end
-    # if @booking.save
-    #   render :new
-    # else
-    #   render :new
-    # end
   end
 
   private

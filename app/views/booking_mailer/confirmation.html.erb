@@ -1,0 +1,18 @@
+<div class="container bg-light p-4">
+<p>Hi Anni,</p>
+
+<p>Congratulations! Someone is interested in working with you!</p>
+<p>You have a new booking on your website:</p>
+
+<p>________________________________________________________</p>
+
+<p> <strong><%= @booking.name %></strong> is interested to <i> <%= @booking.options %> </i>and sends you the following message: </p>
+<p>> <i><%= @booking.message %>.</i> <</p>
+<p>Get in touch with <%= @booking.name %> by sending an email to his/her email address:</p>
+<a href=""><%= @booking.email %></a>
+
+<p>________________________________________________________</p>
+
+
+<p>See you soon!</p>
+</div>
