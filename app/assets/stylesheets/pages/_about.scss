@@ -43,7 +43,16 @@
 .info-button {
   background-color:#D66C44;
   color: white;
-  margin-top: 15px;
-  padding: 3px 5px;
+  padding: 4px 6px;
+  font-size:18px;
+}
+
+.info-button-box {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+      position: absolute;
+    bottom: 44px;
+    left: 200px;
 }
 
