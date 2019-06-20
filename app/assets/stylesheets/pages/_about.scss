@@ -15,6 +15,7 @@
   height: 320px;
   width: 100%;
   object-fit: cover;
+  filter: sepia(20%);
 }
 
 .card-trip h2 {
