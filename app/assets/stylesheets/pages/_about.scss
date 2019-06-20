@@ -8,7 +8,7 @@
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
   margin: 20px 20px;
-  height: 500px;
+  height: 620px;
 }
 
 .card-trip > img {
@@ -18,12 +18,14 @@
 }
 
 .card-trip h2 {
-  font-size: 20px;
+  font-size: 25px;
   margin: 0;
+  padding-top: 5px;
+  padding-bottom: 9px;
 }
 
 .card-trip p {
-  font-size: 20px;
+  font-size: 18px;
   opacity: .7;
   margin: 0;
 }
