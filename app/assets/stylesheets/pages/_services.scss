@@ -1,0 +1,16 @@
+.services-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  img {
+    border-radius: 5px;
+  }
+}
+
+.text-services {
+  margin-top: 0px;
+  width: 300px;
+  h6 {
+    font-size: 20px;
+  }
+}
