@@ -232,6 +232,9 @@
   h3 {
     padding: 15px 0px;
   }
+  p {
+    font-size: 20px;
+  }
 }
 
 #review-text {
@@ -245,10 +248,15 @@
   padding: 15px;
   margin: auto;
   width: 800px;
-  background-color: #e5e5e8;
+  background-color: #f2f2f2;
   border-radius: 10px;
 }
 
 #colored-strong {
   color: #324856;
+}
+
+.about-box {
+  align-items: center;
+  justify-content: center;
 }
