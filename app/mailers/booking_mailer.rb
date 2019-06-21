@@ -1,5 +1,3 @@
-include Rails.application.routes.url_helpers
-
 class BookingMailer < ApplicationMailer
 
   # Subject can be set in your I18n file at config/locales/en.yml
@@ -10,6 +8,6 @@ class BookingMailer < ApplicationMailer
   def confirmation
     @booking = Booking.last
 
-    mail(to: "anni.performatory@gmail.com", subject: "Someone is interested in working with you!")
+    mail(to: "jette.bakemeier@googlemail.com", subject: "Someone is interested in working with you!")
   end
 end
