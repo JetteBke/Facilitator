@@ -4,6 +4,16 @@ class PagesController < ApplicationController
     @bookings = Booking.all
   end
 
+  def about
+    @booking = Booking.new
+    @bookings = Booking.all
+  end
+
+  def services
+    @booking = Booking.new
+    @bookings = Booking.all
+  end
+
   def create_booking
     @booking = Booking.create(booking_params)
     if @booking.save

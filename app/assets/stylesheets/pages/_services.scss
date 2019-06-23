@@ -5,13 +5,11 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   padding: 30px 20px;
   border-radius: 5px;
-  img {
-    border-radius: 10px;
-  }
 }
 
 .img-services {
-  border-radius: 10px;
+  padding: 0px;
+  border-radius: 5px;
 }
 
 .text-services {
@@ -21,6 +19,7 @@
   }
   p {
     font-size: 18px;
+    padding-right: 5px;
   }
 }
 
