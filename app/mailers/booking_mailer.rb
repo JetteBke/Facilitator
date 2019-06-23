@@ -8,6 +8,6 @@ class BookingMailer < ApplicationMailer
   def confirmation
     @booking = Booking.last
 
-    mail(to: "jette.bakemeier@googlemail.com", subject: "Someone is interested in working with you!")
+    mail(to: "annkathrin.thesen@web.de", subject: "Someone is interested in working with you!")
   end
 end
